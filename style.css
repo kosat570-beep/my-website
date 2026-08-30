@@ -1,0 +1,87 @@
+/* Statistics */
+
+.section .cards {
+    margin-top: 20px;
+}
+
+
+/* News */
+
+#news .card {
+    min-height: 320px;
+}
+
+#news .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 230px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #ddd;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Admission */
+
+.admission {
+    padding: 90px 7%;
+    background: linear-gradient(
+        135deg,
+        #123d80,
+        #174ea6
+    );
+    text-align: center;
+    color: white;
+}
+
+.admission-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.admission-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Gallery Mobile */
+
+@media (max-width: 768px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+    .admission-content h2 {
+        font-size: 30px;
+    }
+
+}
