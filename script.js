@@ -28,7 +28,7 @@ const cities = [
     ["နေပြည်တော်", "Naypyitaw"], ["ပျဉ်းမနား", "Pyinmana"],
     ["လယ်ဝေး", "Lewe"], ["တပ်ကုန်း", "Tatkon"],
     ["ဥတ္တရသီရိ", "Ottarathiri"], ["ဇမ္ဗူသီရိ", "Zabuthiri"],
-    ["ပုဗ္ဗသီရိ", "Pobbathiri"], ["ဒက္ခိဏသီရိ", "Dekkhinathiri"],"အေလာ", "Ayelar"],
+    ["ပုဗ္ဗသီရိ", "Pobbathiri"], ["ဒက္ခိဏသီရိ", "Dekkhinathiri"],["အေလာ", "Ayelar"],
 
     // Bago Region
     ["ပဲခူး", "Bago"], ["တောင်ငူ", "Taungoo"], ["ပြည်", "Pyay"],
