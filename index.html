@@ -3,73 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Weather Forecast</title>
     <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
 
-        <header>
-            <h1>Weather App</h1>
-            <p>Weather forecast for your city</p>
-        </header>
+        <h1>🌤️ မြန်မာ့မိုးလေဝသ</h1>
 
         <div class="search-box">
-            <input type="text" id="cityInput" placeholder="Enter city name">
-            <button id="searchBtn">Search</button>
+            <input type="text" id="cityInput" placeholder="မြို့အမည် ရိုက်ထည့်ပါ...">
+            <button id="searchBtn">ရှာဖွေရန်</button>
         </div>
 
-        <p id="status">Loading weather...</p>
+        <p id="status">မြို့အမည်ရိုက်ထည့်ပြီး ရှာဖွေပါ။</p>
+
+        <div id="cityResults"></div>
 
         <div class="weather-card">
 
-            <h2 id="cityName">City</h2>
-            <p id="date">Date</p>
+            <h2 id="cityName">မြို့အမည်</h2>
+            <p id="date">နေ့စွဲ</p>
 
             <div class="main-weather">
-                <div id="weatherIcon">☀️</div>
+                <div id="weatherIcon">🌤️</div>
                 <h1 id="temperature">--°C</h1>
+                <p id="description">ရာသီဥတုအခြေအနေ</p>
             </div>
 
-            <h3 id="description">Weather</h3>
-
-            <p>Feels Like: <span id="feelsLike">--°C</span></p>
-
-            <div class="details">
-
-                <div class="detail-box">
-                    <span>Humidity</span>
-                    <h3 id="humidity">--%</h3>
+            <div class="weather-details">
+                <div>
+                    <span>ခံစားရသောအပူချိန်</span>
+                    <p id="feelsLike">--°C</p>
                 </div>
 
-                <div class="detail-box">
-                    <span>Wind Speed</span>
-                    <h3 id="wind">-- km/h</h3>
+                <div>
+                    <span>စိုထိုင်းဆ</span>
+                    <p id="humidity">--%</p>
                 </div>
 
-                <div class="detail-box">
-                    <span>Rain Chance</span>
-                    <h3 id="rain">--%</h3>
+                <div>
+                    <span>လေတိုက်နှုန်း</span>
+                    <p id="wind">-- km/h</p>
                 </div>
 
-                <div class="detail-box">
-                    <span>Feels Like</span>
-                    <h3 id="feels">--°C</h3>
+                <div>
+                    <span>မိုးရွာနိုင်ခြေ</span>
+                    <p id="rain">--%</p>
                 </div>
-
             </div>
 
             <div class="sun-time">
-                <p>Sunrise: <span id="sunrise">--:--</span></p>
-                <p>Sunset: <span id="sunset">--:--</span></p>
+                <div>
+                    <span>🌅 နေထွက်ချိန်</span>
+                    <p id="sunrise">--</p>
+                </div>
+
+                <div>
+                    <span>🌇 နေဝင်ချိန်</span>
+                    <p id="sunset">--</p>
+                </div>
             </div>
 
         </div>
 
-        <h2 class="forecast-title">7 Days Forecast</h2>
-
-        <div id="forecast" class="forecast"></div>
+        <h2>📅 ၇ ရက်စာ မိုးလေဝသခန့်မှန်းချက်</h2>
+        <div id="forecast"></div>
 
     </div>
 
